@@ -17,6 +17,7 @@ public class oops{
         p2.eat();
         p1.walk();        // An example of Polymorphism(Compile time polymorphism -> 
         p1.walk(200);     //Because it's checking and the decision whether which of the method will get called for after the function call, is happening at the compile time.) 
+        System.out.println((Person.count));
     }
     
 
@@ -25,12 +26,16 @@ public class oops{
 
 class Person{     // Every class has two attributes => Property & Methods
     
+    String name;  //Property
+    int age;      //Property
+
+    static int count; // Static keyword signifies that now it is a property of a class now, not the object. i.e. variable count can be accessed from the class with creating an object.
+
     public Person(){ // Proof that default constructor is being called.
+        count++;
         System.out.println("creating an object");
     }
 
-    String name;  //Property
-    int age;      //Property
 
     public void walk(){ //Methods
         System.out.println(name + " goes for a walk daily.");

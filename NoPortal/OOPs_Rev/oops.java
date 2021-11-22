@@ -59,7 +59,7 @@ class Person{     // Every class has two attributes => Property & Methods
     String name;  //Property
     int age;      //Property
 
-    static int count; // Static keyword signifies that now it is a property of a class now, not the object. i.e. variable count can be accessed from the class with creating an object.
+    static int count; // Static keyword in variables signifies that now it is a property of a class now, not the object. i.e. variable count can be accessed from the class without creating an object.
 
     // public Person(){ // Proof that default constructor is being called.
     //     count++;

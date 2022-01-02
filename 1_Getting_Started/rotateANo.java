@@ -1,10 +1,10 @@
 import java.util.*;
 
-pulbic class rotateANo{
+public class rotateANo{
 
     public static void main(String[] args) {
         
-        Scanner scn = new int(System.in);
+        Scanner scn = new Scanner(System.in);
 
         int n = scn.nextInt();
         int k = scn.nextInt();
@@ -23,11 +23,23 @@ pulbic class rotateANo{
             k += nod;
         }
 
-        int rpow = 1;
-        int remp = 1;
+        int k10 = 1;
+        int nodKm10 = 1;
 
-        
+        // Calculating powers with Math.pow
+        for(int i = 0; i < nod; i++){
+            if(i < k){
+                k10 *= 10;
+            }else{
+                nodKm10 *= 10;
+            }
+        }
 
+        int rem = n % k10;
+        int quo = n / k10;
+        int ans = (rem * nodKm10) + quo;
+
+        System.out.println(ans);
 
 
     }

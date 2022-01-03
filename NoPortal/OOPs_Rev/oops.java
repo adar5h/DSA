@@ -23,11 +23,11 @@ public class oops{
         // p1.walk(200);     //Because it's checking and the decision whether which of the method will get called for after the function call, is happening at the compile time.) 
         // System.out.println((Person.count)); // Accessing static variable 'count' directly from the class 'Person' without creating an object of the class.
     
-        // Developer d1 = new Developer(25,"Jane");
-        // d1.walk();
+        Developer d1 = new Developer(25,"Jane");
+        d1.walk();
 
-        eIntro obj = new eIntro();
-        obj.doWork(); // Accesing eIntro.java's eIntro.class from oops.java // Accessible because of the access modifier public in eIntro.java 
+        // eIntro obj = new eIntro();
+        // obj.doWork(); // Accesing eIntro.java's eIntro.class from oops.java // Accessible because of the access modifier public in eIntro.java 
         
         /* Access Modifiers -> public -> Accesbile to any class.
             private -> The value is only visible to the class it is declared in. 
